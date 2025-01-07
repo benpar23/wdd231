@@ -13,13 +13,14 @@
 header {
     background-color: var(--primary-color);
     display: flex;
-    justify-content: space-between;
+    /* justify-content: center; */
     align-items: center;
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: white;
     position: relative;
+    text-align: left;
 }
 
 h1 {
@@ -89,6 +90,56 @@ h2 {
 section {
     padding: 1rem;
 }
+
+.filter {
+    display: flex;
+
+}
+
+.filter span {
+    background-color: var(--secondary-font-color);
+    padding: 0.5rem 2rem;
+}
+
+.filter span a {
+    color: var(--primary-font-color);
+    text-decoration: none;
+}
+
+.courses {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.courses span {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    text-decoration: none;
+    padding: 1rem;
+    margin-top: 1rem;
+    width: 90%;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+.flag {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#lastModified {
+    color: yellow;
+}
+
+
 
 
 

@@ -91,6 +91,16 @@ section {
     padding: 1rem;
 }
 
+figure {
+    display: grid;
+    justify-content: center;
+}
+
+figcaption {
+    font-style: italic;
+}
+
+
 .filter {
     display: flex;
 

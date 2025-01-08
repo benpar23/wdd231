@@ -13,14 +13,18 @@
 header {
     background-color: var(--primary-color);
     display: flex;
-    /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     width: 100%;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    color: white;
     position: relative;
-    text-align: left;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 h1 {
@@ -34,6 +38,10 @@ nav a {
     margin: 0.5rem 0;
     padding: 0.5rem;
     font-size: 1.25rem;
+}
+
+.active {
+    color: yellow;
 }
 
 nav a:hover {
@@ -88,7 +96,8 @@ h2 {
 }
 
 section {
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 figure {
@@ -137,12 +146,16 @@ footer {
     color: var(--primary-font-color);
     text-align: center;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .flag {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-bottom: 1rem;
+    gap: 1rem;
 }
 
 #lastModified {
@@ -156,5 +169,57 @@ footer {
 /* Larger screen view */
 @media only screen and (min-width: 700px) {
 
+    header {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header div {
+        margin: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        background-color: black;
+        justify-content: space-evenly;
+        position: static;
+    }
+
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        text-decoration: underline 0.5px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        display: grid;
+        grid-template: auto auto / 60% 40%;
+        gap: 0.5rem;
+    }
+
+    .work {
+        grid-column: 1/2;
+        width: 90%;
+    }
+
+    .location {
+        grid-column: 2/3;
+        width: 90%;
+    }
+
+    .certificate {
+        grid-column: 1/3;
+        width: 90%;
+    }
 
 }

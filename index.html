@@ -14,18 +14,20 @@
 </head>
 <body>
     <header>
-        <img src="images/profile-picture.webp" alt="Picture of Ben Parada" width="50">
-        <h1>Ben Parada</h1>
+        <div>
+            <img src="images/profile-picture.webp" alt="Picture of Ben Parada" width="50">
+            <h1>Ben Parada</h1>
+        </div>
         <button type="button" id="menu" aria-label="Menu"></button>
         <nav class="navigation">
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="#">Chamber</a>
             <a href="#">GitHub Profile</a>
             <a href="https://www.linkedin.com/in/benparada">LinkedIn</a>
         </nav>
     </header>
     <main>
-        <section>
+        <section class="work">
             <h2>Course Work</h2>
             <ul>
                 <li></li>
@@ -33,28 +35,21 @@
                 <li></li>
             </ul>
         </section>
-        <section>
+        <section class="location">
             <h2>Toronto, Canada</h2>
             <figure>
                 <img src="images/toronto.webp" alt="Picture of Toronto skyline" width="200">
                 <figcaption>Toronto skyline at sunset</figcaption>
             </figure>
         </section>
-        <section>
+        <section class="certificate">
             <h2>Web & Computer Programming Certificate</h2>
             <div class="filter">
                 <span><a href="">All</a></span>
                 <span><a href="">CSE</a></span>
                 <span><a href="">WDD</a></span>
             </div>
-            <div class="courses">
-                <span>CSE 110</span>
-                <span>CSE 111</span>
-                <span>WDD 130</span>
-                <span>WDD 131</span>
-                <span>CSE 210</span>
-                <span>WDD 231</span>
-            </div>
+            <div class="courses"></div>
         </section>
     </main>
     <footer>

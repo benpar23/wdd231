@@ -154,11 +154,6 @@ figcaption {
     max-width: 500px;
 }
 
-.complete {
-    background-color: var(--primary-color);
-    color: var(--primary-font-color);
-}
-
 .classes span {
     background-color: var(--primary-font-color);
     color: var(--primary-color);
@@ -168,6 +163,11 @@ figcaption {
     width: 100%;
     text-align: center;
     border-radius: 5px;
+}
+
+.classes span.complete {
+    background-color: var(--primary-color);
+    color: var(--primary-font-color);
 }
 
 footer {

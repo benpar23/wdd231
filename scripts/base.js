@@ -27,7 +27,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -40,7 +40,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -52,7 +52,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -64,7 +64,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -78,7 +78,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -98,6 +98,8 @@ const courses = [
 
 const courseSection = document.querySelector(".classes");
 
+createCourseCard(courses);
+
 function createCourseCard(filteredCourses) {
 	
 	courseSection.innerHTML = "";
@@ -105,6 +107,12 @@ function createCourseCard(filteredCourses) {
 	filteredCourses.forEach(course => {
 		const courseCard = document.createElement("span");
 
-		
+		courseCard.innerHTML = `${course.subject} ${course.number}`;
+
+        if (course.completed) {
+            courseCard.className = "complete"
+        }
+
+        courseSection.appendChild(courseCard);
 	})
 }

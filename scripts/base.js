@@ -116,3 +116,25 @@ function createCourseCard(filteredCourses) {
         courseSection.appendChild(courseCard);
 	})
 }
+
+const all = document.querySelector("#all");
+const scienceCourses = document.querySelector("#science");
+const webCourses = document.querySelector("#web");
+
+scienceCourses.addEventListener('click', () => {
+
+	createCourseCard(courses.filter(course => course.subject === "CSE"));
+    
+});
+
+webCourses.addEventListener('click', () => {
+
+	createCourseCard(courses.filter(course => course.subject === "WDD"));
+
+});
+
+all.addEventListener('click', () => {
+
+	createCourseCard(courses);
+
+});

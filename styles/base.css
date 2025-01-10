@@ -170,6 +170,11 @@ figcaption {
     color: var(--primary-font-color);
 }
 
+#credits {
+    padding: 1rem;
+    color: var(--secondary-font-color);
+}
+
 footer {
     background-color: var(--primary-color);
     color: var(--primary-font-color);

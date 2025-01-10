@@ -104,6 +104,8 @@ function createCourseCard(filteredCourses) {
 	
 	courseSection.innerHTML = "";
 
+    const creditsArray = [];
+
 	filteredCourses.forEach(course => {
 		const courseCard = document.createElement("span");
 
@@ -111,10 +113,20 @@ function createCourseCard(filteredCourses) {
 
         if (course.completed) {
             courseCard.className = "complete"
+            creditsArray.push(course.credits);
         }
 
         courseSection.appendChild(courseCard);
 	})
+
+    const credits = document.querySelector("#credits");
+
+    const initialValue = 0;
+
+    const totalCredits = creditsArray.reduce((accumulator, currentValue) => accumulator + currentValue,
+    initialValue);
+
+    credits.innerHTML = `Total Credits: ${totalCredits}`;
 }
 
 const all = document.querySelector("#all");
@@ -124,7 +136,7 @@ const webCourses = document.querySelector("#web");
 scienceCourses.addEventListener('click', () => {
 
 	createCourseCard(courses.filter(course => course.subject === "CSE"));
-    
+
 });
 
 webCourses.addEventListener('click', () => {
@@ -138,3 +150,4 @@ all.addEventListener('click', () => {
 	createCourseCard(courses);
 
 });
+

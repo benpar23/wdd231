@@ -1,0 +1,31 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 0.5fr));
+    padding: 1rem;
+    row-gap: 0.5rem;
+    background-color: rgb(255, 255, 239);
+}
+
+#cards section {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgb(166, 164, 191);
+    border: 1px solid black;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
+}

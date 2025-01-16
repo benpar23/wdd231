@@ -10,5 +10,60 @@
 }
 
 header {
-    background-color: silver;
+    background: linear-gradient(to right, grey, silver);
+    text-align: center;
+    padding: 1rem;
 }
+
+nav {
+    background: linear-gradient(to right, grey, silver);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+}
+
+nav a {
+    color: var(--primary-font-color);
+    display: none;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.active {
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline 0.5px;
+}
+
+.open a {
+    display: block;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+

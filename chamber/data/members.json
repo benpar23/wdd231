@@ -1,0 +1,12 @@
+{
+    "members": [
+        {
+            "name": "Thai-Phlosion",
+            "address": "45 Bloor Avenue, Toronto, ON",
+            "phonenumber": "(416)416-4166",
+            "websiteurl": "https://www.toronto.ca",
+            "image": "../images/cn-tower.ico",
+            "membershiplevel": 1
+        }
+    ]
+}

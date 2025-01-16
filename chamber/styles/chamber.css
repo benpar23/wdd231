@@ -5,6 +5,9 @@
 }
 
 :root {
+    font-family: 'Lato', serif;
+    font-weight: 400;
+    font-style: normal;
     --primary-font-color: black;
     --primary-background-color: silver;
 }
@@ -65,5 +68,12 @@ nav a:hover {
 
 #menu.open::before {
     content: "X";
+}
+
+footer {
+    background-color: var(--primary-font-color);
+    color: white;
+    text-align: left;
+    padding: 1rem;
 }
 

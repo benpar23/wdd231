@@ -70,6 +70,20 @@ nav a:hover {
     content: "X";
 }
 
+main {
+    max-width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    padding: 1rem;
+    row-gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 footer {
     background-color: var(--primary-font-color);
     color: white;

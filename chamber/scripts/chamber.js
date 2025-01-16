@@ -32,16 +32,21 @@ function displayMembers(members) {
         const card = document.createElement("section");
         const name = document.createElement("h2");
         const image = document.createElement("img");
+		const contact = document.createElement("p");
+
 
         name.innerHTML = `${member.name}`;
 
-        portrait.setAttribute("src", prophet.imageurl);
-        portrait.setAttribute("alt", `Portrait of ${prophet.name} ${prophet.lastname}`);
-        portrait.setAttribute("loading", "lazy");
-        portrait.setAttribute("width", "200");
+		contact.innerHTML = `${member.address}<br>${member.phonenumber}<br>${member.websiteurl}`;
+
+        image.setAttribute("src", member.image);
+        image.setAttribute("alt", `Picture of ${member.name}'s logo`);
+        image.setAttribute("loading", "lazy");
+        image.setAttribute("width", "200");
         
         card.appendChild(name);
-        card.appendChild(portrait);
+        card.appendChild(image);
+		card.appendChild(contact);
 
         cards.appendChild(card);
 	})

@@ -54,3 +54,17 @@ function displayMembers(members) {
 
 
 getMemberData();
+
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list")
+const display = document.querySelector(".cards");
+
+gridButton.addEventListener("click", () => {
+	display.classList.add("cards");
+	display.classList.remove("list");
+});
+
+listButton.addEventListener("click", () => {
+    display.classList.add("list");
+    display.classList.remove("cards");
+})

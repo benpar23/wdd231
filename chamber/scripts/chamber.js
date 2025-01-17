@@ -16,12 +16,12 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-const file = "wdd231/chamber/data/members.json";
+const url = "https://benpar23.github.io/wdd231/chamber/data/members.json";
 
 const cards = document.querySelector('.cards');
 
 async function getMemberData() {
-    const response = await fetch(file);
+    const response = await fetch(url);
     const data = await response.json();
     // console.table(data.members);
     displayMembers(data.members);

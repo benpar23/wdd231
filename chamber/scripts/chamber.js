@@ -16,7 +16,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-const file = "/chamber/data/members.json";
+const file = "wdd231/chamber/data/members.json";
 
 const cards = document.querySelector('.cards');
 

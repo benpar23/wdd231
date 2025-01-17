@@ -102,6 +102,11 @@ main div {
     padding: 1rem;
 }
 
+#grid, #list {
+    padding: 0.5rem;
+    width: 70px;
+}
+
 footer {
     background-color: var(--primary-font-color);
     color: white;

@@ -34,7 +34,8 @@ function displayMembers(members) {
         const image = document.createElement("img");
 		const address = document.createElement("p");
         const number = document.createElement("p");
-        const website = document.createElement("p");
+        const website = document.createElement("a");
+        const membership = document.createElement("p");
 
 
         name.innerHTML = `${member.name}`;
@@ -42,6 +43,7 @@ function displayMembers(members) {
 		address.innerHTML = `${member.address}`;
         number.innerHTML = `${member.phonenumber}`;
         website.innerHTML = `${member.websiteurl}`;
+        membership.innerHTML = 
 
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Picture of ${member.name}'s logo`);
@@ -51,6 +53,7 @@ function displayMembers(members) {
         address.setAttribute("id", "address");
         number.setAttribute("id", "number");
         website.setAttribute("id", "website");
+        website.setAttribute("href", member.websiteurl);
         
         card.appendChild(name);
         card.appendChild(image);

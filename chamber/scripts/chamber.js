@@ -47,6 +47,10 @@ function displayMembers(members) {
         image.setAttribute("alt", `Picture of ${member.name}'s logo`);
         image.setAttribute("loading", "lazy");
         image.setAttribute("width", "200");
+
+        address.setAttribute("id", "address");
+        number.setAttribute("id", "number");
+        website.setAttribute("id", "website");
         
         card.appendChild(name);
         card.appendChild(image);

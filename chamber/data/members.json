@@ -3,7 +3,7 @@
         {
             "name": "Thai-Phlosion",
             "address": "45 Bloor Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
+            "phonenumber": "(416) 416-4166",
             "websiteurl": "https://www.toronto.ca",
             "image": "/chamber/images/cn-tower.ico",
             "membershiplevel": 1
@@ -11,47 +11,47 @@
         {
             "name": "Realtor Renaissance",
             "address": "5652 Spadina Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
+            "phonenumber": "(416) 416-4166",
             "websiteurl": "https://www.toronto.ca",
             "image": "/chamber/images/cn-tower.ico",
             "membershiplevel": 2
         },
         {
-            "name": "Thai-Phlosion",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
+            "name": "Petunia's Pet Supply",
+            "address": "176 King St W, Toronto, ON",
+            "phonenumber": "(416) 416-4166",
+            "websiteurl": "https://www.toronto.ca",
+            "image": "/chamber/images/cn-tower.ico",
+            "membershiplevel": 3
+        },
+        {
+            "name": "E&E Apparel",
+            "address": "3976 Yonge St, Toronto, ON",
+            "phonenumber": "(416) 416-4166",
+            "websiteurl": "https://www.toronto.ca",
+            "image": "/chamber/images/cn-tower.ico",
+            "membershiplevel": 2
+        },
+        {
+            "name": "Froyo for the Boyos",
+            "address": "777 Queen St, Toronto, ON",
+            "phonenumber": "(416) 416-4166",
+            "websiteurl": "https://www.toronto.ca",
+            "image": "/chamber/images/cn-tower.ico",
+            "membershiplevel": 2
+        },
+        {
+            "name": "MINA-Crafts",
+            "address": "1 Ossington Avenue, Toronto, ON",
+            "phonenumber": "(416) 416-4166",
             "websiteurl": "https://www.toronto.ca",
             "image": "/chamber/images/cn-tower.ico",
             "membershiplevel": 1
         },
         {
-            "name": "Realtor Renaissance",
-            "address": "5652 Spadina Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
-            "websiteurl": "https://www.toronto.ca",
-            "image": "/chamber/images/cn-tower.ico",
-            "membershiplevel": 2
-        },
-        {
-            "name": "Realtor Renaissance",
-            "address": "5652 Spadina Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
-            "websiteurl": "https://www.toronto.ca",
-            "image": "/chamber/images/cn-tower.ico",
-            "membershiplevel": 2
-        },
-        {
-            "name": "Thai-Phlosion",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
-            "websiteurl": "https://www.toronto.ca",
-            "image": "/chamber/images/cn-tower.ico",
-            "membershiplevel": 1
-        },
-        {
-            "name": "Realtor Renaissance",
-            "address": "5652 Spadina Avenue, Toronto, ON",
-            "phonenumber": "(416)416-4166",
+            "name": "Jack's",
+            "address": "42 Gerrard St, Toronto, ON",
+            "phonenumber": "(416) 416-4166",
             "websiteurl": "https://www.toronto.ca",
             "image": "/chamber/images/cn-tower.ico",
             "membershiplevel": 2

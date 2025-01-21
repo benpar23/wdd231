@@ -43,7 +43,17 @@ function displayMembers(members) {
 		address.innerHTML = `${member.address}`;
         number.innerHTML = `${member.phonenumber}`;
         website.innerHTML = `${member.websiteurl}`;
-        membership.innerHTML = 
+        
+        if (member.membershiplevel === 3) {
+            membership.innerHTML = "Membership Level: Gold"
+        }
+        else if (member.membershiplevel === 2) {
+            membership.innerHTML = "Membership Level: Silver"
+        }
+        else {
+            membership.innerHTML = "Membership Level: Member"
+        }
+        
 
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Picture of ${member.name}'s logo`);
@@ -54,12 +64,14 @@ function displayMembers(members) {
         number.setAttribute("id", "number");
         website.setAttribute("id", "website");
         website.setAttribute("href", member.websiteurl);
+        membership.setAttribute("id", "membership");
         
         card.appendChild(name);
         card.appendChild(image);
 		card.appendChild(address);
         card.appendChild(number);
         card.appendChild(website);
+        card.appendChild(membership);
 
         cards.appendChild(card);
 	})

@@ -75,7 +75,13 @@ main {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    min-width: 315px;
 }
+
+main h1 {
+    text-align: center;
+}
+
 .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
@@ -146,3 +152,37 @@ footer {
     padding: 1rem;
 }
 
+
+/* large screen view */
+
+@media only screen and (min-width: 700px) {
+
+
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header h1 {
+        padding: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        justify-content: space-evenly;
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    #menu {
+        display: none;
+    }
+}

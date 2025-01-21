@@ -32,12 +32,16 @@ function displayMembers(members) {
         const card = document.createElement("section");
         const name = document.createElement("h2");
         const image = document.createElement("img");
-		const contact = document.createElement("p");
+		const address = document.createElement("p");
+        const number = document.createElement("p");
+        const website = document.createElement("p");
 
 
         name.innerHTML = `${member.name}`;
 
-		contact.innerHTML = `${member.address}<br>${member.phonenumber}<br>${member.websiteurl}`;
+		address.innerHTML = `${member.address}`;
+        number.innerHTML = `${member.phonenumber}`;
+        website.innerHTML = `${member.websiteurl}`;
 
         image.setAttribute("src", member.image);
         image.setAttribute("alt", `Picture of ${member.name}'s logo`);
@@ -46,7 +50,9 @@ function displayMembers(members) {
         
         card.appendChild(name);
         card.appendChild(image);
-		card.appendChild(contact);
+		card.appendChild(address);
+        card.appendChild(number);
+        card.appendChild(website);
 
         cards.appendChild(card);
 	})

@@ -107,6 +107,36 @@ main div {
     width: 70px;
 }
 
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0.5rem 1rem;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    min-width: 350px;
+}
+
+.list h2 {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+
+.list p {
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+
+}
+.list img{
+    display: none;
+}
+
 footer {
     background-color: var(--primary-font-color);
     color: white;

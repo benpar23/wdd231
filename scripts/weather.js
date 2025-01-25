@@ -51,5 +51,18 @@ forecastFetch();
   }
 
   function displayForecast(data) {
-    // forecast.innerHTML = `${data.}`
-  }
+    const uniqueDates = []
+    const filteredData = [];
+    
+    data.list.forEach(dataset => {
+
+        const dateTime = dataset.dt_txt;
+        const [dateOnly, timeOnly] = dateTime.split(" ");
+        if (timeOnly === "12:00:00" && !uniqueDates.includes(dateOnly) && uniqueDates.length < 3) {
+            uniqueDates.push(dateOnly);
+            filteredData.push(dataset);
+        }
+    })
+
+    console.log(filteredData);
+}

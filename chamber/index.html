@@ -20,7 +20,10 @@
 </head>
 <body>
     <header>
-        <h1>Toronto Chamber of Commerce</h1>
+        <section class=logo>
+            <img src="images/small-chamber-logo.webp" alt="Logo for the Toronto Chamber of Commerce" width="200">
+            <h1>CHAMBER OF COMMERCE</h1>
+        </section>
         <button type="button" id="menu" aria-label="Menu"></button>
         <nav class="navigation">
             <a href="index.html" class="active">Home</a>
@@ -30,27 +33,38 @@
         </nav>
     </header>
     <main>
-        <h1>Welcome to the Toronto Chamber of Commerce!</h1>
+        <h2 id="welcome">Welcome to the Toronto Chamber of Commerce!</h2>
         <section class="hero">
             <img src="images/hero-image.webp" alt="Photo of business professionals networking" width="600">
             <button class="cta">Sign up for a Membership!</button>
         </section>
-        <section class="events">
-            <h2>Current Events</h2>
-    
-        </section>
-        <section class="weather">
-
+        <section class="info">
+            <section class="events">
+                <h2>Current Events</h2>
+                <p>More will be announced...</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>The current temperature in Toronto, Canada is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </section>
         </section>
         <section class="spotlight">
 
         </section>
     </main>
     <footer>
-        <h3>Toronto Chamber of Commerce</h3>
-        <p>123 Yonge St<br>Toronto, ON H0H 0H0<br>info@torontocc.com<br>(123)456-7890</p>
+        <div>
+            <h3>Toronto Chamber of Commerce</h3>
+            <p>123 Yonge St<br>Toronto, ON H0H 0H0<br>info@torontocc.com<br>(123)456-7890</p>
+        </div>
         <br><br>
-        <p>WDD 231 Class Project<br>Ben Parada<br>&copy; <span id="currentyear"></span> Toronto Chamber of Commerce<br><span id=lastModified></span></p>
+        <div>
+            <p>WDD 231 Class Project<br>Ben Parada<br>&copy; <span id="currentyear"></span> Toronto Chamber of Commerce<br><span id=lastModified></span></p>
+        </div>
     </footer>
 </body>
 </html>

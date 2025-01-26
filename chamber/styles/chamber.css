@@ -109,27 +109,30 @@ main h1 {
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
 
 .hero img {
     margin: 1rem;
-    width: 50%;
+    width: 60%;
     z-index: 0;
+    min-width: 300px;
 }
 
 .cta {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: red;
-    color: #fff;
+    background: linear-gradient(to right, rgb(153, 153, 153), silver);
+    color: black;
     padding: 1rem;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 250px;
 }
 
 #welcome {
@@ -146,7 +149,8 @@ main h1 {
     align-items: center;
 }
 
-.cards section {
+
+.cards section, .info section {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -154,6 +158,10 @@ main h1 {
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info section {
+    height: 100%;
 }
 
 main div {
@@ -251,10 +259,11 @@ footer {
     }
 
     .info {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         justify-content: space-between;
         text-align: center;
+        gap: 1rem;
     }
 
     #menu {

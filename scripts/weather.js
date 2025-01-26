@@ -3,6 +3,10 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const forecast = document.querySelector("#forecast");
 
+const today = new Date();
+
+const fullDate = Intl.DateTimeFormat("en-CA").format(today);
+
 const url = "https://api.openweathermap.org/data/2.5/weather?lat=49.75&lon=6.64&units=metric&appid=7c3905c640644617e62d373d8e901094";
 
 const forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?lat=49.75&lon=6.64&units=metric&appid=7c3905c640644617e62d373d8e901094";
@@ -41,6 +45,7 @@ async function apiFetch() {
   
 forecastFetch();
 
+
   function displayResults(data) {
     currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
@@ -58,11 +63,14 @@ forecastFetch();
 
         const dateTime = dataset.dt_txt;
         const [dateOnly, timeOnly] = dateTime.split(" ");
-        if (timeOnly === "12:00:00" && !uniqueDates.includes(dateOnly) && uniqueDates.length < 3) {
+        if (timeOnly === "12:00:00" && !uniqueDates.includes(dateOnly) && uniqueDates.length < 3 && dateOnly !== fullDate) {
             uniqueDates.push(dateOnly);
             filteredData.push(dataset);
         }
     })
 
+    forecast.innerHTML = `${filteredData[0].main.temp}&deg;C`;
+
     console.log(filteredData);
+
 }

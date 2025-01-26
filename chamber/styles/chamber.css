@@ -100,8 +100,9 @@ main {
     min-width: 315px;
 }
 
-main h1 {
+main h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
 .hero {
@@ -149,7 +150,6 @@ main h1 {
     align-items: center;
 }
 
-
 .cards section, .info section {
     justify-content: center;
     align-items: center;
@@ -162,6 +162,13 @@ main h1 {
 
 .info section {
     height: 100%;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0.5fr));
+    text-align: center;
+    gap: 1rem;
 }
 
 main div {
@@ -256,14 +263,6 @@ footer {
 
     .active {
         color: yellow;
-    }
-
-    .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: space-between;
-        text-align: center;
-        gap: 1rem;
     }
 
     #menu {

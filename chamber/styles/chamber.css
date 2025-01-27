@@ -178,6 +178,14 @@ main div {
     padding: 1rem;
 }
 
+.events p {
+    padding: 1rem;
+}
+
+.events span {
+    font-weight: bold;
+}
+
 #grid, #list {
     padding: 0.5rem;
     width: 70px;

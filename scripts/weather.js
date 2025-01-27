@@ -16,8 +16,8 @@ async function apiFetch() {
       const response = await fetch(url);
       if (response.ok) {
         const data = await response.json();
-        console.log(data); // testing only
-        displayResults(data); // uncomment when ready
+        console.log(data);
+        displayResults(data);
       } else {
           throw Error(await response.text());
       }
@@ -69,7 +69,30 @@ forecastFetch();
         }
     })
 
-    forecast.innerHTML = `${filteredData[0].main.temp}&deg;C`;
+    filteredData.forEach(filtered => {
+
+      const card = document.createElement("div");
+      const iconfig = document.createElement("figure");
+      const iconCaption = document.createElement("figcaption");
+      const icon = document.createElement("img");
+      const temperature = document.createElement("p");
+      const iconsrc = `https://openweathermap.org/img/w/${filtered.weather[0].icon}.png`;
+
+      temperature.innerHTML = `${filtered.main.temp}&deg;C`;
+      let desc = filtered.weather[0].description;
+      icon.setAttribute('alt', desc);
+      icon.setAttribute('src',iconsrc);
+      iconCaption.textContent = `${desc}`;
+
+      iconfig.appendChild(icon);
+      iconfig.appendChild(iconCaption);
+
+      card.appendChild(iconfig);
+      card.appendChild(temperature);
+
+      forecast.appendChild(card);
+    })
+
 
     console.log(filteredData);
 

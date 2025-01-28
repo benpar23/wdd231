@@ -92,8 +92,9 @@ function displayMembers(members) {
 
 getMemberData();
 
-const currentTemp = document.querySelector('#current-temp');
-const forecast = document.querySelector(".weather");
+const forecast = document.querySelector(".future");
+
+const currentTemp = document.querySelector("#current-temp");
 
 const fullDate = Intl.DateTimeFormat("en-CA").format(today);
 
@@ -137,7 +138,10 @@ forecastFetch();
 
 
   function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+
+    const current = document.createElement("p");
+
+    current.innerHTML = `${data.main.temp}&deg;C`;
 
     const weatherIcon = document.createElement("img");
     const weatherFigure = document.createElement("figure");
@@ -152,7 +156,8 @@ forecastFetch();
     weatherFigure.appendChild(weatherIcon);
     weatherFigure.appendChild(captionDesc);
 
-    forecast.appendChild(weatherFigure);
+    currentTemp.appendChild(weatherFigure);
+    currentTemp.appendChild(current);
   }
 
   function displayForecast(data) {

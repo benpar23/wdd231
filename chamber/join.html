@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toronto Chamber of Commerce - Join</title>
+    <meta name="author" content="Ben Parada">
+    <meta name="description" content="Join the Toronto Chamber of Commerce!">
+    <meta property="og:title" content="Toronto Chamber of Commerce - Join">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.pexels.com/photos/12430302/pexels-photo-12430302.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    <meta property="og:url" content="https://benpar23.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="images/cn-tower.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <section class=logo>
+            <img src="images/small-chamber-logo.webp" alt="Logo for the Toronto Chamber of Commerce" width="200">
+            <h1>CHAMBER OF COMMERCE</h1>
+        </section>
+        <button type="button" id="menu" aria-label="Menu"></button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+        </nav>
+    </header>
+    <main>
+        <form id="productForm" method="get" action="review.html">
+            <label>
+                Product Name*
+                <select id="product" name="select" required>
+                    <option value="" disabled selected>Select A Product...</option>
+                </select>
+            </label>
+
+            <div>Overall Rating</div>
+            <div class="stars">
+                <label>&star;<input type="radio" id="one" name="rating" value="one"></label>
+                <label>&star;&star;<input type="radio" id="two" name="rating" value="two"></label>
+                <label>&star;&star;&star;<input type="radio" id="three" name="rating" value="three"></label>
+                <label>&star;&star;&star;&star;<input type="radio" id="four" name="rating" value="four"></label>
+                <label>&star;&star;&star;&star;&star;<input type="radio" id="five" name="rating" value="five"></label>
+            </div>
+
+            <label>Date of Installation*<input type="date" id="install" name="installDate" required></label>
+
+            <div>What features did you find useful in the product? <span class="featureSpan">(Check all that
+                    apply)</span>
+            </div>
+            <label class="features"><input type="checkbox" id="feature1" name="features" value="durability">
+                Durability</label>
+            <label class="features"><input type="checkbox" id="feature2" name="features" value="ease"> Ease of
+                Use</label>
+            <label class="features"><input type="checkbox" id="feature3" name="features" value="performance">
+                Performance</label>
+            <label class="features"><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+
+            <label class="written">
+                <span>Written Review</span> <span class="optional">&#40;Optional&#41;</span><textarea id="rev"
+                    name="review"></textarea>
+            </label>
+
+            <label class="written">
+                <span>Your Name</span> <span class="optional">&#40;Optional&#41;</span><input type="text" id="name"
+                    name="fname">
+            </label>
+
+            <label><input type="submit" value="Post Review" id="button"></label>
+
+        </form>
+    </main>
+    <footer>
+        <div>
+            <h3>Toronto Chamber of Commerce</h3>
+            <p>123 Yonge St<br>Toronto, ON H0H 0H0<br>info@torontocc.com<br>(123)456-7890</p>
+        </div>
+        <br><br>
+        <div>
+            <p>WDD 231 Class Project<br>Ben Parada<br>&copy; <span id="currentyear"></span> Toronto Chamber of Commerce<br><span id=lastModified></span></p>
+        </div>
+    </footer>
+</body>
+</html>

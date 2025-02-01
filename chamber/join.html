@@ -34,32 +34,56 @@
     </header>
     <main class="join">
         <h1>Join our Chamber of Commerce!</h1>
-        <section class="memberships">
-            <div></div>
-        </section>
+        
         <form id="membershipForm" method="get" action="thankyou.html">
-            <label>
-                Product Name*
-                <select id="product" name="select" required>
-                    <option value="" disabled selected>Select A Product...</option>
-                </select>
-            </label>
-
-            <label>Date of Installation*<input type="date" id="install" name="installDate" required></label>
-
-            <label class="written">Written Review<textarea id="rev"name="review"></textarea></label>
 
             <label>First Name*<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
 
             <label>Last Name*<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
 
-            <label>Organizational Title*</label><input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters.">
+            <label>Organizational Title*<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."></label>
 
-            <label>Email Address*<input type="text" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
+            <label>Email Address*<input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
+
+            <label>Phone Number*<input type="tel" name="phone" required autocomplete="tel" title="Your Phone Number"></label>
+
+            <label>Business/Organization Name*<input type="text" name="business" required autocomplete="organization" title="Your business/organization's name"></label>
+
+            <label>
+                Membership Tier*
+                <select id="membership" name="membership" required>
+                    <option value="" disabled selected>Select A Membership...</option>
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>Business/Organization Description<textarea id="description" name="description"></textarea></label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
 
             <label><input type="submit" value="Join" id="button"></label>
 
         </form>
+
+        <section class="cards">
+            <section><h3>NP Membership</h3><button id="nonprofit" class="open-button">Learn More</button></section>
+            <section><h3>Bronze Membership</h3><button id="bronze" class="open-button">Learn More</button></section>
+            <section><h3>Silver Membership</h3><button id="silver" class="open-button">Learn More</button></section>
+            <section><h3>Gold Membership</h3><button id="gold" class="open-button">Learn More</button></section>
+        </section>
+
+        <dialog class="nonprofit">
+            <h3>Non-Profit Membership</h3> 
+            <button class="close-button">❌</button>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde rem ullam labore similique libero asperiores est veritatis ratione et architecto id doloribus tempora minima voluptas perspiciatis sunt ipsam, ipsa, natus incidunt. Sed quia expedita dolorem consequuntur rem iure illum laudantium earum eveniet voluptatibus cumque, soluta vero sint voluptatum, ipsa repudiandae.</p>
+        
+        </dialog>
+        <dialog class="bronze"></dialog>
+        <dialog class="silver"></dialog>
+        <dialog class="gold"></dialog>
     </main>
     <footer>
         <div>

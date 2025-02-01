@@ -15,3 +15,24 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+document.getElementById('timestamp').value = new Date().toISOString();
+
+document.querySelectorAll(".open-button").forEach(button => {
+	button.addEventListener('click', () => {
+		const modalVersion = button.getAttribute("id");
+
+		const modalString = `.${modalVersion}`;
+
+		const modal = document.querySelector(modalString);
+
+		modal.showModal();
+
+	})
+})
+
+document.querySelectorAll(".close-button").forEach(button => {
+	button.addEventListener('click', () => {
+		
+	})
+})

@@ -162,7 +162,7 @@ figure img {
     align-items: center;
 }
 
-.cards section, .info section {
+.cards section, .info section, .cards div {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -244,17 +244,18 @@ section span {
 
 textarea,
 select,
-input[type="text"],
-input[type="date"] {
+input[type="text"]{
     display: block;
     width: 100%;
     max-width: 260px;
-    margin-bottom: 1rem;
 }
 
-textarea,
-input[type="text"] {
+textarea {
     padding-bottom: 1rem;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 0.2rem;
 }
 
 label {
@@ -263,42 +264,6 @@ label {
     gap: 0.4rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
-}
-
-.written {
-    display: block;
-}
-
-.written span:first-of-type,
-.written span:last-of-type {
-    display: inline;
-    padding-bottom: 1rem;
-}
-
-.stars {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.stars label {
-    text-align: center;
-}
-
-.games {
-    display: block;
-    padding: 0.2rem;
-}
-
-.optional {
-    font-size: 0.8rem;
-    color: blue;
-}
-
-.featureSpan {
-    font-style: italic;
 }
 
 input[type="submit"] {
@@ -313,7 +278,9 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 280px;
+    max-width: 300px;
+    border: solid 1px black;
+    padding: 1rem;
 }
 
 .join {
@@ -326,6 +293,34 @@ form {
 .join h1 {
     text-align: center;
 }
+
+.open-button {
+    margin-top: 1rem;
+}
+
+dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    position: fixed;
+    text-align: center;
+}
+
+::backdrop {
+    background: rgb(0 0 0 / 0.5);
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+  }
 
 footer {
     background-color: var(--primary-font-color);

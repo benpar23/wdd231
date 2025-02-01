@@ -94,8 +94,6 @@ nav a:hover {
 
 main {
     max-width: 80%;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
     min-width: 315px;
 }
@@ -316,6 +314,17 @@ form {
     flex-direction: column;
     width: 100%;
     max-width: 280px;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.join h1 {
+    text-align: center;
 }
 
 footer {

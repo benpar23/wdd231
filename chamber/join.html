@@ -32,8 +32,12 @@
             <a href="join.html" class="active">Join</a>
         </nav>
     </header>
-    <main>
-        <form id="productForm" method="get" action="review.html">
+    <main class="join">
+        <h1>Join our Chamber of Commerce!</h1>
+        <section class="memberships">
+            <div></div>
+        </section>
+        <form id="membershipForm" method="get" action="thankyou.html">
             <label>
                 Product Name*
                 <select id="product" name="select" required>
@@ -41,39 +45,19 @@
                 </select>
             </label>
 
-            <div>Overall Rating</div>
-            <div class="stars">
-                <label>&star;<input type="radio" id="one" name="rating" value="one"></label>
-                <label>&star;&star;<input type="radio" id="two" name="rating" value="two"></label>
-                <label>&star;&star;&star;<input type="radio" id="three" name="rating" value="three"></label>
-                <label>&star;&star;&star;&star;<input type="radio" id="four" name="rating" value="four"></label>
-                <label>&star;&star;&star;&star;&star;<input type="radio" id="five" name="rating" value="five"></label>
-            </div>
-
             <label>Date of Installation*<input type="date" id="install" name="installDate" required></label>
 
-            <div>What features did you find useful in the product? <span class="featureSpan">(Check all that
-                    apply)</span>
-            </div>
-            <label class="features"><input type="checkbox" id="feature1" name="features" value="durability">
-                Durability</label>
-            <label class="features"><input type="checkbox" id="feature2" name="features" value="ease"> Ease of
-                Use</label>
-            <label class="features"><input type="checkbox" id="feature3" name="features" value="performance">
-                Performance</label>
-            <label class="features"><input type="checkbox" id="feature4" name="features" value="design"> Design</label>
+            <label class="written">Written Review<textarea id="rev"name="review"></textarea></label>
 
-            <label class="written">
-                <span>Written Review</span> <span class="optional">&#40;Optional&#41;</span><textarea id="rev"
-                    name="review"></textarea>
-            </label>
+            <label>First Name*<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
 
-            <label class="written">
-                <span>Your Name</span> <span class="optional">&#40;Optional&#41;</span><input type="text" id="name"
-                    name="fname">
-            </label>
+            <label>Last Name*<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
 
-            <label><input type="submit" value="Post Review" id="button"></label>
+            <label>Organizational Title*</label><input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters.">
+
+            <label>Email Address*<input type="text" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
+
+            <label><input type="submit" value="Join" id="button"></label>
 
         </form>
     </main>

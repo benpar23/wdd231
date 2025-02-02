@@ -16,7 +16,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-document.getElementById('timestamp').value = new Date().toISOString();
+document.getElementById('timestamp').value = today.toLocaleString();
 
 document.querySelectorAll(".open-button").forEach(button => {
 	button.addEventListener('click', () => {
@@ -33,6 +33,13 @@ document.querySelectorAll(".open-button").forEach(button => {
 
 document.querySelectorAll(".close-button").forEach(button => {
 	button.addEventListener('click', () => {
-		
+		const modalClass = button.parentNode.getAttribute("class");
+
+		const modalString = `.${modalClass}`;
+
+		const modal = document.querySelector(modalString);
+
+		modal.close();
+
 	})
 })

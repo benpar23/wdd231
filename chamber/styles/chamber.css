@@ -162,7 +162,7 @@ figure img {
     align-items: center;
 }
 
-.cards section, .info section, .cards div {
+.cards section, .info section, .cards div, #results {
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -170,6 +170,53 @@ figure img {
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.join .cards section {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.join .cards h2 {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.join .cards section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-background-color);
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+    pointer-events: none;
+}
+
+dialog ul {
+    list-style-position: inside;
+    margin: 1rem;
+}
+
+dialog p {
+    margin: 1rem;
 }
 
 .info section {
@@ -247,7 +294,7 @@ select,
 input[type="text"]{
     display: block;
     width: 100%;
-    max-width: 260px;
+    max-width: 350px;
 }
 
 textarea {
@@ -278,7 +325,8 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    min-width: 300px;
+    max-width: 400px;
     border: solid 1px black;
     padding: 1rem;
 }
@@ -290,7 +338,16 @@ form {
     align-items: center;
 }
 
-.join h1 {
+.join div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+}
+
+main h1 {
     text-align: center;
 }
 
@@ -304,7 +361,8 @@ dialog {
     transform: translate(-50%, -50%);
     padding: 1em;
     max-width: 50ch;
-    border: 0;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
     box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
     position: fixed;
     text-align: center;
@@ -320,7 +378,19 @@ dialog {
     right: 10px;
     border: none;
     background: none;
-  }
+}
+
+#results p, #results h3 {
+    padding: 0.5rem;
+}
+
+#results p span {
+    font-weight: bold;
+}
+
+.thanks {
+    margin-bottom: 1rem;
+}
 
 footer {
     background-color: var(--primary-font-color);
@@ -386,6 +456,14 @@ footer {
     input[type="text"],
     input[type="date"] {
         max-width: 600px;
+    }
+
+    .join div {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
     }
 
     footer {

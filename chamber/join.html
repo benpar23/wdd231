@@ -34,56 +34,95 @@
     </header>
     <main class="join">
         <h1>Join our Chamber of Commerce!</h1>
-        
-        <form id="membershipForm" method="get" action="thankyou.html">
+        <div>    
+            <form id="membershipForm" method="get" action="thankyou.html">
 
-            <label>First Name*<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>First Name*<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
 
-            <label>Last Name*<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Last Name*<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
 
-            <label>Organizational Title*<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."></label>
+                <label>Organizational Title<input type="text" id="title" name="title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" title="Only letters, spaces, and hyphens are allowed. Minimum 7 characters."></label>
 
-            <label>Email Address*<input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
+                <label>Email Address*<input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
 
-            <label>Phone Number*<input type="tel" name="phone" required autocomplete="tel" title="Your Phone Number"></label>
+                <label>Phone Number*<input type="tel" name="phone" required autocomplete="tel" title="Your Phone Number"></label>
 
-            <label>Business/Organization Name*<input type="text" name="business" required autocomplete="organization" title="Your business/organization's name"></label>
+                <label>Business/Organization Name*<input type="text" name="business" required autocomplete="organization" title="Your business/organization's name"></label>
 
-            <label>
-                Membership Tier*
-                <select id="membership" name="membership" required>
-                    <option value="" disabled selected>Select A Membership...</option>
-                    <option value="NP Membership">NP Membership</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select>
-            </label>
+                <label>
+                    Membership Tier
+                    <select id="membership" name="membership">
+                        <option value="" disabled selected>Select A Membership...</option>
+                        <option value="NP Membership">NP Membership</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
 
-            <label>Business/Organization Description<textarea id="description" name="description"></textarea></label>
+                <label>Business/Organization Description<textarea id="description" name="description"></textarea></label>
 
-            <input type="hidden" id="timestamp" name="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp">
 
-            <label><input type="submit" value="Join" id="button"></label>
+                <label><input type="submit" value="Join" id="button"></label>
 
-        </form>
+            </form>
 
         <section class="cards">
+            <h2>Membership Levels</h2>
             <section><h3>NP Membership</h3><button id="nonprofit" class="open-button">Learn More</button></section>
             <section><h3>Bronze Membership</h3><button id="bronze" class="open-button">Learn More</button></section>
             <section><h3>Silver Membership</h3><button id="silver" class="open-button">Learn More</button></section>
             <section><h3>Gold Membership</h3><button id="gold" class="open-button">Learn More</button></section>
         </section>
+    </div>
 
         <dialog class="nonprofit">
             <h3>Non-Profit Membership</h3> 
             <button class="close-button">❌</button>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde rem ullam labore similique libero asperiores est veritatis ratione et architecto id doloribus tempora minima voluptas perspiciatis sunt ipsam, ipsa, natus incidunt. Sed quia expedita dolorem consequuntur rem iure illum laudantium earum eveniet voluptatibus cumque, soluta vero sint voluptatum, ipsa repudiandae.</p>
-        
+            <p>For non-profit organizations looking to network, this membership has no cost associated</p>
+            <ul>
+                <li>Access to membership networking events</li>
+                <li>Monthly newsletter</li>
+            </ul>
+            <p>Cost: Free</p>
         </dialog>
-        <dialog class="bronze"></dialog>
-        <dialog class="silver"></dialog>
-        <dialog class="gold"></dialog>
+        <dialog class="bronze">
+            <h3>Bronze Membership</h3> 
+            <button class="close-button">❌</button>
+            <p>For businesses looking to start networking!</p>
+            <ul>
+                <li>Access to membership networking events</li>
+                <li>Monthly newsletter</li>
+            </ul>
+            <p>Cost: $10/monthly</p>
+        </dialog>
+        <dialog class="silver">
+            <h3>Silver Membership</h3> 
+            <button class="close-button">❌</button>
+            <p>For businesses established in networking</p>
+            <ul>
+                <li>Access to membership networking events</li>
+                <li>Monthly newsletter</li>
+                <li>Have your business highlighted on our Spotlight section!</li>
+                <li>Discounted membership events</li>
+            </ul>
+            <p>Cost: $25/month</p>
+        </dialog>
+        <dialog class="gold">
+            <h3>Gold Membership</h3> 
+            <button class="close-button">❌</button>
+            <p>For businesses looking to really take advantage of opportunities!</p>
+            <ul>
+                <li>Access to membership networking events</li>
+                <li>Monthly newsletter</li>
+                <li>Have your business highlighted on our Spotlight section!</li>
+                <li>Discounted membership events</li>
+                <li>Free monthly breakfast event</li>
+                <li>Exclusive events</li>
+            </ul>
+            <p>Cost: $50/month</p>
+        </dialog>
     </main>
     <footer>
         <div>

@@ -9,6 +9,7 @@
     font-style: normal;
     --primary-font-color: black;
     --primary-background-color: rgb(228, 228, 200);
+    --secondary-background-color: rgb(55, 5, 5);
 }
 
 header {
@@ -36,6 +37,7 @@ section h2, section p {
     padding: 0.5rem;
 }
 
+
 section:nth-child(even) {
     margin-left: auto;
     margin-right: 0;
@@ -49,12 +51,30 @@ section:last-child {
     box-shadow: none;
 }
 
+#beige, #brown {
+    display: inline-flex;
+    width: 2rem;
+    height: 1.5rem;
+    padding: 0;
+    margin: 0;
+    border: solid 0.5px black;
+    align-self: center;
+}
+
+#beige {
+    background-color: var(--primary-background-color);
+}
+
+#brown {
+    background-color: var(--secondary-background-color);
+}
+
 h2 {
     text-decoration: underline;
 }
 
 footer {
-    background-color: rgb(55, 5, 5);
+    background-color: var(--secondary-background-color);
     color: white;
     text-align: center;
     padding: 1rem;

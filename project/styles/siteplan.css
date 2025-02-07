@@ -73,6 +73,15 @@ h2 {
     text-decoration: underline;
 }
 
+figure {
+    padding: 1rem;
+    margin: 1rem auto 1rem;
+}
+
+figcaption {
+   font-style: italic;
+}
+
 footer {
     background-color: var(--secondary-background-color);
     color: white;

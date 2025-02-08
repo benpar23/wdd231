@@ -1,0 +1,52 @@
+{
+    "locations": [
+        {
+            "name": "CN Tower",
+            "address": "45 Bloor Avenue, Toronto, ON",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "Royal Ontario Museum (ROM)",
+            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "Ontario Science Centre",
+            "address": "45 Bloor Avenue, Toronto, ON",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "Royal Ontario Museum (ROM)",
+            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "CN Tower",
+            "address": "45 Bloor Avenue, Toronto, ON",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "Royal Ontario Museum (ROM)",
+            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "CN Tower",
+            "address": "45 Bloor Avenue, Toronto, ON",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        },
+        {
+            "name": "Royal Ontario Museum (ROM)",
+            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
+            "description": "Description",
+            "image": "images/building-logo.webp"
+        }
+    ]
+}

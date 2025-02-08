@@ -172,6 +172,21 @@ figure img {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.location {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 0.5fr));
+    justify-content: center;
+}
+
+.location section {
+    display: grid;
+    grid-template-areas:
+            "a"
+            "b"
+            "c";
+    justify-content: center;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;

@@ -16,7 +16,7 @@ hamButton.addEventListener('click', () => {
 	hamButton.classList.toggle('open');
 });
 
-const url = "https://benpar23.github.io/wdd231/chamber/data/locations.json";
+const url = "data/locations.json";
 
 const cards = document.querySelector('.cards');
 

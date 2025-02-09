@@ -214,6 +214,11 @@ figure img {
 
 .location section p {
     grid-area: c;
+    padding-bottom: 1rem;
+}
+
+.discover {
+    max-width: 90%;
 }
 
 @keyframes fadeIn {
@@ -451,6 +456,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr;
         margin: 0 auto;
+        width: 100%;
     }
 
     .location h2, .location p, .location address {
@@ -510,11 +516,13 @@ footer {
     .location {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 100%;
     }
 
     .location section {
         width: 100%;
         margin: 0 auto;
+        height: 400px;
     }
 
 }

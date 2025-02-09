@@ -2,50 +2,50 @@
     "locations": [
         {
             "name": "CN Tower",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "description": "Description",
+            "address": "301 Front St W, Toronto, ON M5V 2T6",
+            "description": "One of the world’s tallest freestanding structures, the CN Tower offers stunning panoramic views of Toronto. Visitors can enjoy the glass floor, the EdgeWalk, and fine dining at the 360 Restaurant.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Royal Ontario Museum (ROM)",
             "address": "100 Queen's Park, Toronto, ON M5S 2C6",
-            "description": "Description",
+            "description": "Canada’s largest museum of world cultures and natural history, featuring dinosaur fossils, Egyptian artifacts, and Indigenous art. The ROM’s iconic crystal-shaped entrance is a Toronto landmark.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Ontario Science Centre",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "description": "Description",
+            "address": "770 Don Mills Rd, Toronto, ON M3C 1T3",
+            "description": "An interactive museum that brings science to life with hands-on exhibits, a planetarium, and immersive experiences for all ages. It’s a great destination for learning and discovery.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Casa Loma",
-            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
-            "description": "Description",
+            "address": "1 Austin Terrace, Toronto, ON M5R 1X8",
+            "description": "A majestic Gothic-style castle with secret tunnels, grand halls, and lush gardens. Once a private residence, it’s now a popular tourist attraction and event venue.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Toronto Zoo",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "description": "Description",
+            "address": "2000 Meadowvale Rd, Toronto, ON M1B 5K7",
+            "description": "One of the largest zoos in the world, featuring diverse habitats, over 5,000 animals, and conservation programs. Highlights include the giant pandas (when visiting), polar bears, and African savanna exhibits.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Ripley's Aquarium of Canada",
-            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
-            "description": "Description",
+            "address": "288 Bremner Blvd, Toronto, ON M5V 3L9",
+            "description": "A spectacular underwater attraction featuring thousands of marine animals, a moving walkway through a shark tunnel, and interactive touch pools. A top spot for families and ocean lovers.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Canada's Wonderland",
-            "address": "45 Bloor Avenue, Toronto, ON",
-            "description": "Description",
+            "address": "1 Canada's Wonderland Dr, Vaughan, ON L6A 1S6",
+            "description": "A thrilling amusement park featuring over 200 attractions, including roller coasters, a massive water park, and family-friendly rides. Known for Leviathan and Yukon Striker, it’s a must-visit for adrenaline seekers.",
             "image": "images/building-logo.webp"
         },
         {
             "name": "Art Gallery of Ontario (AGO)",
-            "address": "100 Queen's Park, Toronto, ON M5S 2C6",
-            "description": "Description",
+            "address": "317 Dundas St W, Toronto, ON M5T 1G4",
+            "description": "Home to a vast collection of over 95,000 artworks, including pieces by the Group of Seven, European masters, and contemporary artists. The AGO also features stunning architecture by Frank Gehry.",
             "image": "images/building-logo.webp"
         }
     ]

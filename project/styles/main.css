@@ -21,6 +21,28 @@ header {
 }
 
 nav {
+    background-color: var(--primary-background-color);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+}
+
+nav a {
+    color: var(--primary-font-color);
+    display: none;
+    text-decoration: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+/* nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -32,10 +54,40 @@ nav a {
     text-decoration: none;
     color: var(--primary-font-color);
     transition: transform 0.1s ease-in-out;
-}
+} */
 
 nav a:hover {
     transform: scale(1.03);
+}
+
+.open a {
+    display: block;
+}
+
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: black;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    z-index: 1000;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.active {
+    background-color: var(--secondary-background-color);
+    color: white;
+    width: 100%;
+    text-align: center;
 }
 
 main {
@@ -44,10 +96,27 @@ main {
     width: 80%;
 }
 
+h1 {
+    text-align: center;
+}
+
+#motto {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 section, h2, p {
     padding: 1rem;
 }
-
 
 footer {
     background-color: var(--secondary-background-color);

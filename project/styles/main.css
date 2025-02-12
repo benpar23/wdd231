@@ -18,6 +18,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+header img {
+    width: 300px;
 }
 
 nav {
@@ -25,7 +30,7 @@ nav {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 0;
+    top: 100%;
     left: 0;
     right: 0;
     align-items: center;
@@ -42,19 +47,6 @@ nav a {
     font-size: 1.25rem;
 }
 
-/* nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-nav a {
-    display: block;
-    padding-right: 2rem;
-    text-decoration: none;
-    color: var(--primary-font-color);
-    transition: transform 0.1s ease-in-out;
-} */
 
 nav a:hover {
     transform: scale(1.03);
@@ -70,7 +62,7 @@ nav a:hover {
     background: none;
     color: black;
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 1rem;
     z-index: 1000;
 }
@@ -100,22 +92,25 @@ h1 {
     text-align: center;
 }
 
-#motto {
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 section, h2, p {
     padding: 1rem;
+}
+
+section {
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem auto 2rem;
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+}
+
+figure img {
+    width: 80%;
+    min-width: 300px;
+    max-width: 600px;
 }
 
 footer {
@@ -127,4 +122,54 @@ footer {
 
 footer p {
     padding: 0.5rem;
+}
+
+@media only screen and (min-width: 770px){
+    
+    header img {
+        width: 400px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: static;
+    }
+
+    nav a {
+        display: block;
+        margin-right: 1rem;
+        padding: 0.7rem;
+        text-decoration: none;
+        color: var(--primary-font-color);
+        transition: transform 0.1s ease-in-out;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .active {
+        background-color: var(--secondary-background-color);
+        color: white;
+        width: auto;
+        border-radius: 20px;
+    }
+
+    #motto {
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }

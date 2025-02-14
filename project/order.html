@@ -32,19 +32,33 @@
         </nav>
     </header>
     <main>
-        <h1>Brownies made for the sweets lovers</h1>
-        <section>
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione?</p>
-        </section>
-        <section>
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione?</p>
-        </section>
-        <section>
-            <h2>Lorem ipsum dolor</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero, ratione?</p>
-        </section>
+        <h1>Order Now</h1>
+        <form id="orderForm" method="get" action="thankyou.html">
+
+            <label>First Name*<input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+
+            <label>Last Name*<input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+
+            <label>Email Address*<input type="email" name="email" required autocomplete="email" title="Your Email Address" placeholder="someone@gmail.com"></label>
+
+            <label>Phone Number*<input type="tel" name="phone" required autocomplete="tel" title="Your Phone Number"></label>
+
+            <label>
+                Choose your brownies
+                <select id="brownies" name="brownies">
+                    <option value="" disabled selected>Choose from the following options...</option>
+                    <option value="NP Membership">NP Membership</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <label><input type="submit" value="Join" id="button"></label>
+
+        </form>
     </main>
     <footer>
         <p>&copy; <span id="currentyear"></span> - Ben Parada - Toronto, Canada</p>

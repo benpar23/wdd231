@@ -18,7 +18,7 @@ function show(item) {
 
     formData.forEach((element) => {
         if (element.startsWith(item)) {
-            result = element.split('=')[1].replace("%40", "@").replaceAll("+", " ");
+            result = element.split('=')[1].replace("%40", "@").replaceAll("+", " ").replace("%27", "'");
         }
     })
 
@@ -51,7 +51,6 @@ localStorage.setItem("orderHistory", JSON.stringify(orderHistory));
 
 const showInfo = document.querySelector('#results');
 showInfo.innerHTML = `
-<h2>Here is your order confirmation:</h2>
 <p><strong>First Name:</strong> ${show("first")}</br></br>
 <strong>Last Name:</strong> ${show("last")}</br></br>
 <strong>Your Phone:</strong> ${show("phone")}</br></br>

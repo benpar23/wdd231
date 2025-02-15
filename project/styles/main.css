@@ -92,6 +92,27 @@ main {
     margin: 0 auto;
 }
 
+dialog {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+    max-width: 50ch;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    position: fixed;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+}
+
 .home, .orders {
     display: flex;
     flex-direction: column;
@@ -285,6 +306,53 @@ input[type="submit"] {
         transition: transform 0.1s ease-in-out;
         font-size: 1rem;
         text-align: center;
+    }
+
+    .home {
+        display: grid;
+        grid-template-areas:
+            "a a a a"
+            "b b b c"
+            "d d d d"
+            "e e e e";
+        width: 80%;
+    }
+
+    .home h1 {
+        grid-area: a;
+    }
+
+    .home figure {
+        grid-area: c;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.2s;
+    }
+
+    #cta {
+        grid-area: d;
+        width: 400px;
+        text-align: center;
+        justify-self: center;
+        margin: 2rem auto 1rem;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.3s;
+    }
+
+    .home section:first-of-type {
+        grid-area: b;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.1s;
+        height: 80%;
+    }
+
+    .home section:last-of-type {
+        grid-area: e;
+        opacity: 0;
+        animation: fadeIn 1.5s ease-in-out forwards;
+        animation-delay: 0.4s;
     }
 
     #menu {

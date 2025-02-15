@@ -4,26 +4,34 @@ updateFooterDates();
 
 setupMenuToggle();
 
-const lastOrder = document.querySelector(".last");
+const today = new Date();
 
-function displayLastOrder() {
+document.getElementById('timestamp').value = today.toLocaleString();
 
-    const data = localStorage.getItem("lastOrder");
+const lastOrder = document.querySelector(".history");
 
-    if (data !== null){
+function displayOrderHistory() {
+
+    const data = JSON.parse(localStorage.getItem("orderHistory")) || [];
+
+    if (data.length !== 0){
+        
+        data.forEach((item) => {
         const details = document.createElement("p");
-        details.innerHTML = data;
+        details.innerHTML = 
+        `<strong>Order Details:</strong> ${item.orderDetails}<br>
+        <strong>Date:</strong> ${item.timestamp}<br><br>`
         lastOrder.appendChild(details);
-    }
+    })}
     else {
         const details = document.createElement("p");
-        details.innerHTML = `No order found`;
+        details.innerHTML = `No orders found`;
         lastOrder.appendChild(details);
     }
 
 }
 
-displayLastOrder();
+displayOrderHistory();
 
 
 

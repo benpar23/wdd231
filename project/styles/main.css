@@ -92,11 +92,16 @@ main {
     margin: 0 auto;
 }
 
-.home {
+.home, .orders {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.orders section {
+    width: 90%;
+    max-width: 500px;
 }
 
 h1 {
@@ -194,8 +199,8 @@ footer p {
 
 .cards section div span {
     font-style: italic;
-    color: red;
-    border-bottom: 1px dotted red;
+    color: blue;
+    border-bottom: 1px dotted blue;
 }
 
 .cards section a {
@@ -220,7 +225,7 @@ form {
 }
 
 select,
-input[type="text"]{
+input[type="text"], input[type="email"], input[type="tel"]{
     display: block;
     width: 95%;
     max-width: 350px;
@@ -310,6 +315,35 @@ input[type="submit"] {
     .cards section {
         height: 577px;
         padding-top: 0;
+    }
+
+    .orders {
+        display: grid;
+        grid-template-areas: 
+            "a a a a" 
+            "b b c c";
+        gap: 1rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 80%;
+    }
+
+    .orders h1 {
+        grid-area: a;
+    }
+
+    .orders form {
+        grid-area: b;
+        margin-left: 1rem;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    select, input[type="text"], input[type="email"], input[type="tel"] {
+        max-width: 400px;
+    }
+
+    .orders section {
+        grid-area: c;
     }
 
     footer {

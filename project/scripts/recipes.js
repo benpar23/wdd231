@@ -35,11 +35,12 @@ function buildRecipeCards(recipes) {
         const image = document.createElement("img");
 		const cookTime = document.createElement("p");
         const servings = document.createElement("p");
+        const div = document.createElement("div");
         const url = document.createElement("a");
 
         title.innerHTML = `${recipe.title}`;
-        cookTime.innerHTML = `${recipe.time}`;
-        servings.innerHTML = `${recipe.servings}`;
+        cookTime.innerHTML = `<span>Cook Time</span><br>${recipe.time}`;
+        servings.innerHTML = `<span>Servings</span><br>${recipe.servings}`;
         caption.innerHTML = `${recipe.credit}`;
 
         image.setAttribute("src", recipe.image);
@@ -48,14 +49,21 @@ function buildRecipeCards(recipes) {
         image.setAttribute("width", "200");
 
         url.setAttribute("href", recipe.url);
+        url.setAttribute("target", "_blank");
+        url.setAttribute("rel", "noreferrer noopener");
+        url.textContent = "Go to Recipe";
+
+        div.setAttribute("class", "styled");
 
         figure.appendChild(image);
         figure.appendChild(caption);
 
+        div.appendChild(cookTime);
+        div.appendChild(servings);
+
         card.appendChild(title);
         card.appendChild(figure);
-        card.appendChild(cookTime);
-        card.appendChild(servings);
+        card.appendChild(div);
         card.appendChild(url);
 
         cards.appendChild(card);

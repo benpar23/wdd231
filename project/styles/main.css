@@ -52,6 +52,11 @@ nav a:hover {
     transform: scale(1.03);
 }
 
+.open {
+    padding-bottom: 1rem;
+    border-top: 1px solid black;
+}
+
 .open a {
     display: block;
 }
@@ -85,7 +90,13 @@ nav a:hover {
 main {
     padding: 1rem;
     margin: 0 auto;
-    /* width: 80%; */
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -105,12 +116,20 @@ section {
 figure {
     display: flex;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
 figure img {
     width: 80%;
     min-width: 300px;
     max-width: 600px;
+}
+
+#cta {
+    padding: 1rem;
+    background-color: var(--secondary-background-color);
+    color: white;
+    text-decoration: none;
 }
 
 footer {
@@ -146,8 +165,8 @@ footer p {
     border-radius: 5px;
     padding: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 0 auto;
-    width: 80%;
+    margin: 0 auto 1rem;
+    width: 90%;
 }
 
 .cards section figure {
@@ -157,6 +176,84 @@ footer p {
     width: 100%;
     padding: 0;
 }
+
+.cards section figure figcaption {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.cards section figure img {
+    min-width: 250px;
+    max-width: 400px;
+}
+
+.cards section div {
+    display: flex;
+    flex-direction: row;
+}
+
+.cards section div span {
+    font-style: italic;
+    color: red;
+    border-bottom: 1px dotted red;
+}
+
+.cards section a {
+    display: inline-block;
+    background-color: var(--secondary-background-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+/* Form Page */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 200px;
+    max-width: 400px;
+    border: solid 1px black;
+    padding: 1rem;
+}
+
+select,
+input[type="text"]{
+    display: block;
+    width: 95%;
+    max-width: 350px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    padding: 0.2rem;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+/* Thank you Page */
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 /* large screen view */
@@ -209,4 +306,27 @@ footer p {
             opacity: 1;
         }
     }
+
+    .cards section {
+        height: 577px;
+        padding-top: 0;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+/* smallest screen supported */
+
+@media only screen and (max-width: 370px) {
+
+    header img {
+        width: 85%;
+        min-width: 245px;
+    }
+
 }

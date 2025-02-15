@@ -2,7 +2,7 @@
     "recipes": [
         {
             "title": "Mint Brownies",
-            "image": "",
+            "image": "images/mint-brownies.webp",
             "credit": "Chocolate Mint Brownies Recipe photo by Melissa Patterson for Taste of Home",
             "time": "50 min",
             "servings": "6 dozen",
@@ -10,7 +10,7 @@
         },
         {
             "title": "Caramel Brownies",
-            "image": "",
+            "image": "images/caramel-brownies.webp",
             "credit": "Caramel Brownies Recipe photo by Laura Scherb for Taste of Home",
             "time": "1 hour 10 min",
             "servings": "2 dozen",
@@ -18,7 +18,7 @@
         },
         {
             "title": "Frosted Brownies",
-            "image": "",
+            "image": "images/frosted-brownies.webp",
             "credit": "Frosted Brownies Recipe photo by Lauren Habermehl for Taste of Home",
             "time": "35 min",
             "servings": "2 dozen",
@@ -26,7 +26,7 @@
         },
         {
             "title": "Cappuccino Cake Brownies",
-            "image": "",
+            "image": "images/cappuccino-brownies.webp",
             "credit": "Cappuccino Cake Brownies Recipe photo by Taste of Home",
             "time": "40 min",
             "servings": "16 bars",
@@ -34,7 +34,7 @@
         },
         {
             "title": "Chocolate Crunch Brownies",
-            "image": "",
+            "image": "images/chocolate-crunch.webp",
             "credit": "Taste of Home",
             "time": "1 hour",
             "servings": "3 dozen",
@@ -42,7 +42,7 @@
         },
         {
             "title": "Layered Chocolate Marshmallow Peanut Butter Brownies",
-            "image": "",
+            "image": "images/marshmallow-peanut-butter.webp",
             "credit": "Layered Chocolate Marshmallow Peanut Butter Brownies Recipe photo by Taste of Home",
             "time": "50 min",
             "servings": "4 dozen",
@@ -50,7 +50,7 @@
         },
         {
             "title": "Oatmeal Brownies",
-            "image": "",
+            "image": "images/oatmeal-brownies.webp",
             "credit": "Fudgy Oatmeal Bars Recipe photo by Eric Kleinberg for Taste of Home",
             "time": "45 min",
             "servings": "about 6 dozen",
@@ -58,7 +58,7 @@
         },
         {
             "title": "Cinnamon Brownies",
-            "image": "",
+            "image": "images/cinnamon-brownies.webp",
             "credit": "Taste of Home",
             "time": "1 hour",
             "servings": "3 dozen",
@@ -66,7 +66,7 @@
         },
         {
             "title": "Fudge-Topped Brownies",
-            "image": "",
+            "image": "images/fudge-topped.webp",
             "credit": "Taste of Home",
             "time": "50 min",
             "servings": "about 10 dozen",
@@ -74,7 +74,7 @@
         },
         {
             "title": "Cookies & Cream Brownies",
-            "image": "",
+            "image": "images/cookies-and-cream.webp",
             "credit": "Cookies & Cream Brownies Recipe photo by Taste of Home",
             "time": "40 min",
             "servings": "2 dozen",
@@ -82,7 +82,7 @@
         },
         {
             "title": "Cream Cheese Swirl Brownies",
-            "image": "",
+            "image": "images/cream-cheese-swirl.webp",
             "credit": "Cream Cheese Swirl Brownies Recipe photo by Taste of Home",
             "time": "45 min",
             "servings": "1 dozen",
@@ -90,7 +90,7 @@
         },
         {
             "title": "Candy Bar Brownies",
-            "image": "",
+            "image": "images/candy-bar.webp",
             "credit": "Candy Bar Brownies Recipe photo by Taste of Home",
             "time": "45 min",
             "servings": "3 dozen",
@@ -98,7 +98,7 @@
         },
         {
             "title": "Peppermint Brownies",
-            "image": "",
+            "image": "images/peppermint-brownies.webp",
             "credit": "Peppermint Brownies Recipe photo by Taste of Home",
             "time": "50 min",
             "servings": "2 dozen",
@@ -106,7 +106,7 @@
         },
         {
             "title": "Skillet Brownies",
-            "image": "",
+            "image": "images/skillet-brownies.webp",
             "credit": "Skillet Brownies Recipe photo by Laura Scherb for Taste of Home",
             "time": "40 min",
             "servings": "6 servings",
@@ -114,7 +114,7 @@
         },
         {
             "title": "Candy Bar Cheesecake Brownies",
-            "image": "",
+            "image": "images/candy-bar-cheesecake.webp",
             "credit": "Candy Bar Cheesecake Brownies Recipe photo by Taste of Home",
             "time": "45 min",
             "servings": "2 dozen",

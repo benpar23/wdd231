@@ -3,21 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brownies Squared</title>
+    <title>Order Page</title>
     <meta name="author" content="Ben Parada">
-    <meta name="description" content="Welcome to home of Brownies Squared, your local bakery business.">
-    <meta property="og:title" content="Brownies Squared">
+    <meta name="description" content="Order from a variety of our signature brownies">
+    <meta property="og:title" content="Order Page">
     <meta property="og:type" content="website">
-    <meta property="og:image"
-        content="https://benpar23.github.io/wdd231/project/images/brownie-logo.png">
-    <meta property="og:url" content="https://benpar23.github.io/wdd231/project/index.html">
+    <meta property="og:image" content="https://benpar23.github.io/wdd231/project/images/brownie-logo.png">
+    <meta property="og:url" content="https://benpar23.github.io/wdd231/project/order.html">
     <link rel="icon" href="images/logo.ico">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
-    <script src="scripts/main.js" defer></script>
+    <script src="scripts/order.js" type="module"></script>
 </head>
 <body>
     <header>
@@ -28,10 +27,9 @@
             <a href="order.html" class="active">Order</a>
             <a href="about.html">About</a>
             <a href="recipes.html">Recipes</a>
-            <a href="contact.html">Contact Us</a>
         </nav>
     </header>
-    <main>
+    <main class="home">
         <h1>Order Now</h1>
         <form id="orderForm" method="get" action="thankyou.html">
 
@@ -47,22 +45,31 @@
                 Choose your brownies
                 <select id="brownies" name="brownies">
                     <option value="" disabled selected>Choose from the following options...</option>
-                    <option value="NP Membership">NP Membership</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
+                    <option value="Reese's Pieces Brownies">Reese's Pieces Brownies - $30</option>
+                    <option value="Blondie Brownies">Blondie Brownies - $25</option>
+                    <option value="Mini Egg Brownies">Mini Egg Brownies - $30</option>
+                    <option value="Salted Caramel Brownies">Salted Caramel Brownies - $25</option>
                 </select>
             </label>
 
             <input type="hidden" id="timestamp" name="timestamp">
 
-            <label><input type="submit" value="Join" id="button"></label>
+            <label><input type="submit" value="Place Order" id="button"></label>
 
         </form>
+        <section class="last">
+            <h2>Last Order</h2>
+        </section>
     </main>
     <footer>
-        <p>&copy; <span id="currentyear"></span> - Ben Parada - Toronto, Canada</p>
-        <p id="lastModified"></p>
+        <div>
+            <h3>Brownies Squared</h3>
+            <p>123 Street Dr<br>Markham, ON H0H 0H0<br>info@browniessquared.com<br>(123)456-7890</p>
+        </div>
+        <br><br>
+        <div>
+            <p>&copy; <span id="currentyear"></span> Brownies Squared<br><span id=lastModified></span></p>
+        </div>
     </footer>
 </body>
 </html>
